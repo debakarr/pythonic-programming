@@ -1,14 +1,21 @@
-def myFunction(x, y, z):
-    a = x + y
-    b = z
-    if x > y:
-        print(f"{x} is greater than {y}")
-    else:
-        print(f"{y} is greater than or equal to {x}")
+from decimal import Decimal
+from typing import TypeVar, Protocol
 
+T = TypeVar('T')
 
-def square(my_number):
-    return mynumber**2
+pi = Decimal(22) / Decimal(7)
 
+class Repeatable(Protocol):
+    def __mul__(self: T, repeat_count: int) -> T: ...
 
-print("Hello, World!")
+RT = TypeVar('RT', bound=Repeatable)
+
+def double(x: RT) -> RT:
+    return x * 2
+
+print(f"{double(4) = }")
+print(f"{double('D') = }")
+print(f"{double([1, 2, 3, 4]) = }")
+print(f"{double(pi) = }")
+print(f"{double((1, 2, 3)) = }")
+print(f"{double({1:1, 2:2}) = }")
