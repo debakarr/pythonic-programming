@@ -48,7 +48,7 @@ bqplot
 # Linters and Formatters
 flake8 
 pycodestyle_magic
-black
+black[jupyter]
 
 # Unit test
 pytest
