@@ -30,24 +30,22 @@
       {
         "command": "debugger:render-mime-variable",
         "selector": ".jp-DebuggerVariables-body"
+      },
+      {
+        "command": "debugger:copy-to-clipboard",
+        "selector": ".jp-DebuggerVariables-body"
+      },
+      {
+        "command": "debugger:copy-to-globals",
+        "selector": ".jp-DebuggerVariables-body.jp-debuggerVariables-local"
       }
     ]
   },
   "jupyter.lab.shortcuts": [
     {
-      "command": "debugger:debug-console",
-      "keys": ["Accel Shift I"],
-      "selector": ".jp-CodeConsole"
-    },
-    {
-      "command": "debugger:debug-file",
-      "keys": ["Accel Shift I"],
-      "selector": ".jp-FileEditor"
-    },
-    {
-      "command": "debugger:debug-notebook",
-      "keys": ["Accel Shift I"],
-      "selector": ".jp-Notebook"
+      "command": "debugger:show-panel",
+      "keys": ["Accel Shift E"],
+      "selector": "body"
     },
     {
       "command": "debugger:continue",
