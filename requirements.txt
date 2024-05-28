@@ -1,7 +1,7 @@
 # Core modules (mandatory)
 jupyterlite-core==0.3.0
-jupyterlab~=4.0.11
-notebook~=7.0.7
+jupyterlab~=4.1.6
+notebook~=7.1.2
 
 
 # Python kernel (optional)
@@ -14,12 +14,8 @@ jupyterlite-javascript-kernel==0.3.0
 jupyterlab-language-pack-fr-FR
 jupyterlab-language-pack-zh-CN
 
-# SQLite kernel (optional)
-jupyterlite-xeus-sqlite==0.2.1
 # P5 kernel (optional)
-jupyterlite-p5-kernel==0.1.1
-# Lua kernel (optional)
-jupyterlite-xeus-lua==0.3.3
+jupyterlite-p5-kernel==0.1.0
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3.3.0,<4
@@ -46,7 +42,7 @@ ipyleaflet
 
 # Python: plotting libraries (optional)
 plotly>=5,<6
-bqplot
+bqplot 
 
 # Linters and Formatters
 flake8 
